@@ -1,12 +1,10 @@
-package com.redfin.sffoodtruck;
-
 import com.redfin.sffoodtruck.model.FoodTruck;
 import com.redfin.sffoodtruck.service.SFFoodTruckService;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class SfFoodTruckApplication {
+public class SFFoodTruckApplication {
 
 	/**
 	 * Main method class to handle outputting information to screen and user input
