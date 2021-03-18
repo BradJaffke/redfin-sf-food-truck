@@ -32,28 +32,36 @@ public class SFFoodTruckApplication {
 			System.out.println("---------------------------------");
 			System.out.println("NAME\tADDRESS");
 
-			for (int i = 0; i < openFoodTrucks.size(); i++)
-			{
+			for (int i = 0; i < openFoodTrucks.size(); i++) {
 				String userInput = "";
 
 				//If we have more than 10 results then paginate through them on user input
-				if (i % 10 == 0 && i != 0)
-				{
+				if (i % 10 == 0 && i != 0) {
 					System.out.println("---------------------------------");
 					System.out.println("Showing 10 Food Trucks...");
 					System.out.println("Press 0 (plus the enter key) to exit");
-					System.out.println("Press any other alphanumeric key (plus the enter key) to see the next page");
+					System.out.println("Press 1 (plus the enter key) to see the next page");
 
 					Scanner scanner = new Scanner(System.in);
 					userInput = scanner.next();
 
 					if (userInput.equals("0"))
 						break;
-				}
+					else if (userInput.equals("1"))
+						continue;
+					while (!userInput.equals("0") && !userInput.equals("1")) {
+						System.out.println("---------------------------------");
+						System.out.println("Invalid Selection");
+						System.out.println("Press 0 (plus the enter key) to exit");
+						System.out.println("Press 1 (plus the enter key) to see the next page");
 
+						userInput = scanner.next();
+					}
+				}
 				System.out.println(openFoodTrucks.get(i).getTruckName()
-						+ "\t"  + openFoodTrucks.get(i).getTruckAddress());
+						+ "\t" + openFoodTrucks.get(i).getTruckAddress());
 			}
 		}
 	}
 }
+

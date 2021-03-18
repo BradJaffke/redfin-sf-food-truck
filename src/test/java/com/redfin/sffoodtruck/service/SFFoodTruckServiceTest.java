@@ -16,7 +16,6 @@ public class SFFoodTruckServiceTest {
 		boolean open = service.determineIfFoodTruckIsOpenRightNow(foodTruckJsonObject);
 
 		Assert.assertEquals(open, true);
-
 	}
 
 }
