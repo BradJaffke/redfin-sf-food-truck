@@ -26,4 +26,4 @@ The SF Food Truck finder will display results in groups of 10.  After it display
 In order to move on:
 
 1. To Exit the program: Type '0' and then hit the enter key
-2. To Move to the next 10 results: type any other key and then hit the enter key
+2. To Move to the next 10 results: type any other alphanumeric key and then hit the enter key

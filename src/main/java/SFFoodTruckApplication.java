@@ -42,7 +42,7 @@ public class SFFoodTruckApplication {
 					System.out.println("---------------------------------");
 					System.out.println("Showing 10 Food Trucks...");
 					System.out.println("Press 0 (plus the enter key) to exit");
-					System.out.println("Press any other key (plus the enter key) to see the next page");
+					System.out.println("Press any other alphanumeric key (plus the enter key) to see the next page");
 
 					Scanner scanner = new Scanner(System.in);
 					userInput = scanner.next();
